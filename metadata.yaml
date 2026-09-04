@@ -1,0 +1,8 @@
+name: astrbot_plugin_mcserver_monitor
+display_name: MC 服务器直连监控
+desc: 直连 Minecraft 服务器地址（支持多服务器 /mcadd 管理），检测开服、关服与在线人数变动并推送；记录每台服务器当天去重游玩人数，每天0点自动总结推送。无需面板与账号，纯标准库实现。
+short_desc: 多服务器直连监控 + 每日去重游玩人数统计与0点总结
+author: dsh-bot
+version: v1.1.0
+repo: ""
+astrbot_version: ">=4.16"

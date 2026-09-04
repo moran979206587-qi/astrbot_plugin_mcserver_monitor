@@ -1,0 +1,62 @@
+{
+  "server_address": {
+    "type": "string",
+    "default": "",
+    "name": "首个服务器地址（一次性导入）",
+    "description": "首次启用时自动导入为第一台服务器，如 play.example.com 或 1.2.3.4，可带端口 my.server.com:25566。之后请用 /mcadd 添加多条服务器"
+  },
+  "server_port": {
+    "type": "int",
+    "default": 25565,
+    "name": "默认端口",
+    "description": "默认 Minecraft 端口 25565；/mcadd /mcmod 中地址未带端口时使用"
+  },
+  "ping_timeout": {
+    "type": "int",
+    "default": 5,
+    "name": "探测超时（秒）",
+    "description": "单次连接探测的超时时间。过大时关服检测会变迟钝，建议 3~8 秒"
+  },
+  "poll_interval": {
+    "type": "int",
+    "default": 10,
+    "name": "轮询间隔（秒）",
+    "description": "每多少秒探测一次所有服务器。建议 5~30，过小会增加服务器负担"
+  },
+  "notify_on_start": {
+    "type": "bool",
+    "default": true,
+    "name": "推送：开服通知",
+    "description": "服务器由离线变为在线时，向已订阅会话推送“已开服”消息"
+  },
+  "notify_on_stop": {
+    "type": "bool",
+    "default": true,
+    "name": "推送：关服通知",
+    "description": "服务器由在线变为离线时，向已订阅会话推送“已关服”消息"
+  },
+  "notify_on_player_change": {
+    "type": "bool",
+    "default": true,
+    "name": "推送：人数变动通知",
+    "description": "在线人数发生变动时，向已订阅会话推送进服/退服消息"
+  },
+  "notify_join_leave_details": {
+    "type": "bool",
+    "default": true,
+    "name": "推送：进出服玩家名播报",
+    "description": "开启时播报具体玩家名（需服务器开放玩家列表查询）；关闭时只播报人数变化"
+  },
+  "notify_daily_summary": {
+    "type": "bool",
+    "default": true,
+    "name": "推送：每日 0 点总结",
+    "description": "每天 0 点向已订阅会话推送当日各服务器去重游玩人数总结"
+  },
+  "debug": {
+    "type": "bool",
+    "default": false,
+    "name": "调试模式",
+    "description": "打印更详细的探测与推送日志"
+  }
+}
