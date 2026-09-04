@@ -1,6 +1,6 @@
 # astrbot_plugin_mcserver_monitor
 
-**MC 服务器直连监控插件（AstrBot）**
+**MC 服务器消息订阅（AstrBot）**
 
 直连 Minecraft（Java 版）服务器地址，周期执行 **Server List Ping** 探测：
 检测 **开服、关服、在线人数与玩家名单变动**，并主动推送到 `/mcntfy` 订阅的群/私聊。
