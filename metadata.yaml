@@ -4,5 +4,5 @@ desc: 直连 Minecraft 服务器地址（支持多服务器 /mcadd 管理），�
 short_desc: 多服务器直连监控 + 每日去重游玩人数统计与0点总结
 author: dsh-bot
 version: v1.1.0
-repo: ""
+repo: "https://github.com/moran979206587-qi/astrbot_plugin_mcserver_monitor"
 astrbot_version: ">=4.16"
